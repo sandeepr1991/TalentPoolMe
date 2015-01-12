@@ -1,0 +1,30 @@
+body
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Helvetica";
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+#talentMenu
+{
+    background-color: #3AA2FC;
+    color:	#FFFFFF;
+}
+table
+{
+    background-color: #3AA2FC;
+    color:	#FFFFFF;
+}
+td.left
+{
+   text-align: left;
+   padding-right: 865px;
+}
+td.right
+{
+    text-align: right;
+    padding-right: 25px;
+}
