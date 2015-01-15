@@ -1,27 +1,55 @@
 body
 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0px;
     font-family: "Helvetica";
+    padding: 0;
+    margin: 0;
 }
-
+#top {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+*
+{
+    margin-right: 0px;
+    margin-left: 0px;
+    right: 0;
+    left:0;
+}
 .navbar {
   margin-bottom: 20px;
 }
 #talentMenu
 {
-    background-color: #3AA2FC;
+    background-color: #1FB0FF;
     color:	#FFFFFF;
+    padding-bottom: 0px;
 }
 table
 {
-    background-color: #3AA2FC;
+    background-color: #1FB0FF;
     color:	#FFFFFF;
+    width: 100%;
+}
+
+#notif
+{
+    margin-top: 25px;
+    margin-bottom: 24px;
+    padding-left: 45px;
+}
+#tab1
+{
+    padding-left: 45px;
 }
 td.left
 {
    text-align: left;
-   padding-right: 865px;
+   
 }
 td.right
 {
