@@ -1,0 +1,114 @@
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="description" content="">
+       <meta name="author" content="">
+	   <link href="css/style.css" rel="stylesheet">
+       <link href="css/style-updatePage.css" rel="stylesheet">
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+       <title>TalentPoolMe - Update</title>
+    </head>
+	
+	<body>
+		<div id="top" class="container">
+			<div id="talentMenu">
+                <table>
+                    <tr>
+						<td class="left">
+							<img alt="Brand" src="img/200.jpg">
+						</td>
+						<td class="right">
+							<h4>
+								Brown University
+							</h4>
+						</td>
+					</tr>
+                </table>
+            </div>
+			<!-- Static navbar -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+				  </div>
+				  <div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+					  <li class="active"><a href="#">Home</a></li>
+					  <li><a href="#">Talent</a></li>
+					  <li><a href="#">Employers</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+					  <li><a href="#">Notifications</a></li>
+					  <li class="active"><a href="#">Update<span class="sr-only">(current)</span></a></li>
+					</ul>
+				  </div><!--/.nav-collapse -->
+				</div><!--/.container-fluid -->
+			</nav>
+			
+			<h2 id="notif">Update</h2>
+            <div id="tab1" class="tabbable">
+				 <ul class="nav nav-pills">
+                    <li><a href="#account-panel-content" data-toggle="tab">Account</a></li>
+                    <li class="active"><a href="#update-panel-content" data-toggle="tab">Update</a></li>
+                </ul>
+				<div class="tab-content">
+					<div id="account-panel-content" class="tab-pane fade">
+						<p>This will demonstrate account information</p>
+					</div>
+					<div id="update-panel-content" class="tab-pane fade active in">
+						<div class="row">
+							<div class="col-lg-2 col-md-2">
+								<table id="update-university-table">
+									<tr>
+										<td>
+											<div id="university-icon">
+												<img alt="university-icon" src="./img/university-icon.jpg" class="img-responsive"/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h3>Brown University</h3>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div id="update-form-container" class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1">
+								<form id="update-form">
+									<div class="form-group">
+										<label for="universityNameInput">University</label>
+										<input type="email" class="form-control" id="universityNameInput" placeholder="Enter University Name" />
+									</div>
+									<div class="form-group">
+										<label for="emailAddressInput">Email Address</label>
+										<input type="email" class="form-control" id="emailAddressInput" placeholder="Enter Email" />
+									</div>
+									<div class="form-group">
+										<label for="passwordInput">Password</label>
+										<input type="password" class="form-control" id="passwordInput" placeholder="Enter Password" />
+									</div>
+									<button type="submit" class="btn btn-default">Update</button>
+								</form>
+							</div>
+							<div class="col-lg-2 col-md-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- container -->
+	
+	
+	
+	<!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
