@@ -1,0 +1,25 @@
+.tabSearch
+{
+    color: #000000;
+    margin-left: 25px;
+}
+#searchResult
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	width: 450px;
+}
+#searchResult.searchResult-title
+{
+	width: 600px;
+}
+#inputGrp
+{
+	margin-top: 30px;
+}
+#searchBtn
+{
+    background-color: #1FB0FF;
+    color:	#FFFFFF;
+	margin-right: 45px;
+}

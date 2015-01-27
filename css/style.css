@@ -5,7 +5,8 @@ body
     padding: 0;
     margin: 0;
 }
-#top {
+#top
+{
    width: 100%;
    margin: 0;
    padding: 0;
@@ -18,9 +19,10 @@ body
     margin-right: 0px;
     margin-left: 0px;
     right: 0;
-    left:0;
+    left: 0;
 }
-.navbar {
+.navbar
+{
   margin-bottom: 20px;
 }
 #ital
@@ -43,15 +45,6 @@ table
 {
     color: #000000;
 }
-.tabSearch
-{
-    color: #000000;
-    margin-left: 25px;
-}
-#inputGrp
-{
-    margin-left: 30px;
-}
 #pict
 {
     margin-left: 41px;
@@ -71,50 +64,8 @@ td.left
    text-align: left;
    
 }
-#searchBtn
-{
-    background-color: #1FB0FF;
-    color:	#FFFFFF;
-}
 td.right
 {
     text-align: right;
     padding-right: 25px;
-}
-.left-menu
-{
-	border-radius: 4px;
-	color: #FFFFFF;
-	background-color: #1FB0FF;
-}
-.left-menu > a
-{
-	color: #FFFFFF;
-}
-#user-list
-{
-	color: #000000;
-	width: 15em;
-	margin-left: 3em;
-}
-#img-user-container > img
-{
-	width: 80px;
-	height: 80px;
-}
-#insights-table, #interv-table, #intern-table, #jobs-table, #skills-table
-{
-	color: #000000;
-	width: 25em;
-	margin-left: 3em;
-	table-layout: fixed;
-}
-td.item
-{
-	border: 1px solid black;
-	font-weight: bold;
-}
-td.stat
-{
-	border: 1px solid black;
 }
