@@ -14,9 +14,9 @@
     <body>    
         <div id="top" class="container">
             <div id="talentMenu">
-                <TABLE>
+                <table id="talentTitle">
                     <TR><TD class="left"><img alt="Brand" src="img/200.jpg"></TD><TD class="right">User Name</TD></TR>
-                </TABLE>
+                </table>
             </div>
 			<!-- Static navbar -->
 			<nav class="navbar navbar-default" role="navigation">
@@ -47,14 +47,146 @@
 			<div class="row">
 				<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1" id="searchArea">
 					<h2>Employers</h2>
-					<div id="inputGrp" class="input-group">
-                        <input type="text" class="form-control" placeholder="Search...">
-                        <span class="input-group-btn">
-                            <button id="searchBtn"class="btn btn-default" type="button">Search employers</button>
-                        </span>
-                    </div><!-- /input-group -->
-					<br />
-					<h3>Filters</h3>
+					<div id="nameSearchArea">
+						<h3><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Search By Name</h3>
+						<form id="inputGrp1" class="input-group">
+							<input type="text" class="typeahead" autocomplete="off" spellcheck="false" placeholder="Company Name">
+							<button id="searchBtn"class="btn btn-default" type="button">Search</button>
+						</form><!-- /input-group1 -->
+					</div>
+					<div id="filterSearchArea">
+						<h3><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Search By Filters</h3>
+						<form id="inputGrp2">
+							<table id="filters">
+								<tr>
+									<td>
+										<h4>Industry</h4>
+									</td>
+									<td>
+										<select name="industry" id="industry" class="form-control filter-item">
+											<option value="All">All</option>
+											<option value="IT">IT</option>
+											<option value="IB">IB</option>
+											<option value="Consulting">Consulting</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>Size</h4>
+									</td>
+									<td>
+										<select name="size" id="size" class="form-control filter-item">
+											<option value="All">All</option>
+											<option value="Large">Large</option>
+											<option value="Medium">Medium</option>
+											<option value="Small">Small</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>Type</h4>
+									</td>
+									<td>
+										<select name="type" id="type" class="form-control filter-item">
+											<option value="All">All</option>
+											<option value="Startup">Startup</option>
+											<option value="Government">Goverment</option>
+											<option value="Non-profit">Non-profit</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>Founded</h4>
+									</td>
+									<td>
+										<select name="founded" id="founded" class="form-control">
+											<option value="All">All</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+											<option value="2012">2012</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>State</h4>
+									</td>
+									<td>
+										<select name="state" id="state" class="form-control">
+											<option value="All">All</option>
+											<option value="AK">AK</option>
+
+											<option value="AL">AL</option>
+											<option value="AR">AR</option>
+											<option value="AZ">AZ</option>
+											<option value="CA">CA</option>
+
+											<option value="CO">CO</option>
+											<option value="CT">CT</option>
+											<option value="DC">DC</option>
+											<option value="DE">DE</option>
+
+											<option value="FL">FL</option>
+											<option value="GA">GA</option>
+											<option value="HI">HI</option>
+											<option value="IA">IA</option>
+
+											<option value="ID">ID</option>
+											<option value="IL">IL</option>
+											<option value="IN">IN</option>
+											<option value="KS">KS</option>
+
+											<option value="KY">KY</option>
+											<option value="LA">LA</option>
+											<option value="MA">MA</option>
+											<option value="MD">MD</option>
+
+											<option value="ME">ME</option>
+											<option value="MI">MI</option>
+											<option value="MN">MN</option>
+											<option value="MO">MO</option>
+
+											<option value="MS">MS</option>
+											<option value="MT">MT</option>
+											<option value="NC">NC</option>
+											<option value="ND">ND</option>
+
+											<option value="NE">NE</option>
+											<option value="NH">NH</option>
+											<option value="NJ">NJ</option>
+											<option value="NM">NM</option>
+
+											<option value="NV">NV</option>
+											<option value="NY">NY</option>
+											<option value="OH">OH</option>
+											<option value="OK">OK</option>
+
+											<option value="OR">OR</option>
+											<option value="PA">PA</option>
+											<option value="RI">RI</option>
+											<option value="SC">SC</option>
+
+											<option value="SD">SD</option>
+											<option value="TN">TN</option>
+											<option value="TX">TX</option>
+											<option value="UT">UT</option>
+
+											<option value="VA">VA</option>
+											<option value="VT">VT</option>
+											<option value="WA">WA</option>
+											<option value="WI">WI</option>
+
+											<option value="WV">WV</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+							<button id="searchBtn"class="btn btn-default" type="button">Search</button>
+						</form><!-- /input-group2 -->
+					</div>
 				</div>
 				<div class="col-sm-6 col-md-6 col-lg-6" id="resultArea">
 					<h2>Search Results</h2>
@@ -221,5 +353,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/typeahead.js"></script>
+	<script src="js/script-searchPage.js"></script>
 	</body>
 </html>
