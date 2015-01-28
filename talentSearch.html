@@ -11,11 +11,16 @@
 		<title>TalentPoolMe</title>
     </head>
 	
-    <body>    
+    <body>
         <div id="top" class="container">
             <div id="talentMenu">
                 <table id="talentTitle">
-                    <TR><TD class="left"><img alt="Brand" src="img/200.jpg"></TD><TD class="right">User Name</TD></TR>
+                    <tr>
+						<td class="left"><img alt="Brand" src="img/200.jpg"></td>
+						<td class="right">
+							<img src="./img/user_logo.jpg"> User Name
+						</td>
+					</tr>
                 </table>
             </div>
 			<!-- Static navbar -->
@@ -23,10 +28,10 @@
 				<div class="container-fluid">
 				  <div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					  <span class="sr-only">Toggle navigation</span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
 					
 				  </div>
@@ -51,23 +56,19 @@
 						<h3><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Search By Name</h3>
 						<form id="inputGrp1" class="input-group">
 							<input type="text" class="typeahead" autocomplete="off" spellcheck="false" placeholder="Company Name">
-							<button id="searchBtn"class="btn btn-default" type="button">Search</button>
 						</form><!-- /input-group1 -->
 					</div>
 					<div id="filterSearchArea">
 						<h3><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Search By Filters</h3>
 						<form id="inputGrp2">
-							<table id="filters">
+							<table id="filters" class="table-responsive">
 								<tr>
 									<td>
 										<h4>Industry</h4>
 									</td>
 									<td>
-										<select name="industry" id="industry" class="form-control filter-item">
-											<option value="All">All</option>
-											<option value="IT">IT</option>
-											<option value="IB">IB</option>
-											<option value="Consulting">Consulting</option>
+										<select name="industry" id="filterOption-industry" class="form-control filter-item">
+											<option value="all" selected="selected">All</option>
 										</select>
 									</td>
 								</tr>
@@ -78,9 +79,11 @@
 									<td>
 										<select name="size" id="size" class="form-control filter-item">
 											<option value="All">All</option>
-											<option value="Large">Large</option>
-											<option value="Medium">Medium</option>
-											<option value="Small">Small</option>
+											<option value="ExLarge">Over 2000</option>
+											<option value="Large">800 - 2000</option>
+											<option value="Medium">100 - 800</option>
+											<option value="Small">20 - 100</option>
+											<option value="ExSmall">Below 20</option>
 										</select>
 									</td>
 								</tr>
@@ -91,9 +94,10 @@
 									<td>
 										<select name="type" id="type" class="form-control filter-item">
 											<option value="All">All</option>
-											<option value="Startup">Startup</option>
-											<option value="Government">Goverment</option>
-											<option value="Non-profit">Non-profit</option>
+											<option value="Startup">Privately-owned national company/organization</option>
+											<option value="Government">International company/organization</option>
+											<option value="Non-profit">Government</option>
+											<option value="Non-profit">Start-up</option>
 										</select>
 									</td>
 								</tr>
@@ -112,74 +116,41 @@
 								</tr>
 								<tr>
 									<td>
+										<h4>Perks</h4>
+									</td>
+									<td>
+										<select name="state" id="filterOption-Perks" class="form-control">
+											<option value="All">All</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
 										<h4>State</h4>
 									</td>
 									<td>
-										<select name="state" id="state" class="form-control">
+										<select name="state" id="filterOption-state" class="form-control">
 											<option value="All">All</option>
-											<option value="AK">AK</option>
-
-											<option value="AL">AL</option>
-											<option value="AR">AR</option>
-											<option value="AZ">AZ</option>
-											<option value="CA">CA</option>
-
-											<option value="CO">CO</option>
-											<option value="CT">CT</option>
-											<option value="DC">DC</option>
-											<option value="DE">DE</option>
-
-											<option value="FL">FL</option>
-											<option value="GA">GA</option>
-											<option value="HI">HI</option>
-											<option value="IA">IA</option>
-
-											<option value="ID">ID</option>
-											<option value="IL">IL</option>
-											<option value="IN">IN</option>
-											<option value="KS">KS</option>
-
-											<option value="KY">KY</option>
-											<option value="LA">LA</option>
-											<option value="MA">MA</option>
-											<option value="MD">MD</option>
-
-											<option value="ME">ME</option>
-											<option value="MI">MI</option>
-											<option value="MN">MN</option>
-											<option value="MO">MO</option>
-
-											<option value="MS">MS</option>
-											<option value="MT">MT</option>
-											<option value="NC">NC</option>
-											<option value="ND">ND</option>
-
-											<option value="NE">NE</option>
-											<option value="NH">NH</option>
-											<option value="NJ">NJ</option>
-											<option value="NM">NM</option>
-
-											<option value="NV">NV</option>
-											<option value="NY">NY</option>
-											<option value="OH">OH</option>
-											<option value="OK">OK</option>
-
-											<option value="OR">OR</option>
-											<option value="PA">PA</option>
-											<option value="RI">RI</option>
-											<option value="SC">SC</option>
-
-											<option value="SD">SD</option>
-											<option value="TN">TN</option>
-											<option value="TX">TX</option>
-											<option value="UT">UT</option>
-
-											<option value="VA">VA</option>
-											<option value="VT">VT</option>
-											<option value="WA">WA</option>
-											<option value="WI">WI</option>
-
-											<option value="WV">WV</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>City</h4>
+									</td>
+									<td>
+										<select name="state" id="filterOption-city" class="form-control">
+											<option value="All">All</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>EVP</h4>
+									</td>
+									<td>
+										<select name="state" id="filterOption-EVP" class="form-control">
+											<option value="All">All</option>
 										</select>
 									</td>
 								</tr>
@@ -193,7 +164,9 @@
 					<table id="searchResult">
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>4A's</h3>
@@ -201,7 +174,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>ABB Group</h3>
@@ -209,7 +184,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Accenture</h3>
@@ -217,7 +194,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Burlington Stores</h3>
@@ -225,7 +204,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Calumet Specialty Products Partners, L.P.</h3>
@@ -233,7 +214,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Cardinal Health</h3>
@@ -241,7 +224,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Emerson</h3>
@@ -249,7 +234,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>EOG Resources, Inc. (formerly Enron Oil and Gas)</h3>
@@ -257,7 +244,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Exelon Corporation</h3>
@@ -265,7 +254,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>FCA Group - Fiat Chrysler Auto Group</h3>
@@ -273,7 +264,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Marriott International </h3>
@@ -281,7 +274,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Mars Incorporated</h3>
@@ -289,7 +284,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Moss Adams LLP</h3>
@@ -297,7 +294,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Oracle</h3>
@@ -305,7 +304,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>SABIC Innovative Plastics</h3>
@@ -313,7 +314,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Siemens</h3>
@@ -321,7 +324,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>Sprint</h3>
@@ -329,7 +334,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>TCS (Tata Consultancy Services)</h3>
@@ -337,7 +344,9 @@
 						</tr>
 						<tr>
 							<td>
-								<img src="./img/abb.jpg" />
+								<a href="4A's.html">
+									<img src="./img/abb.jpg"/>
+								</a>
 							</td>
 							<td class="searchResult-title">
 								<h3>TRW Automotive Holdings Corp.</h3>
