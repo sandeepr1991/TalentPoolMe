@@ -1,0 +1,22 @@
+#picSlides
+{
+	width: 350px;
+}
+#ital
+{
+    font-style: italic;
+}
+#intro
+{
+	margin-top: 50px;
+	width: 480px;
+	table-layout: fixed;
+}
+#introPic
+{
+	width: 200px;
+}
+#introText
+{
+	width: 280px;
+}

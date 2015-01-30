@@ -14,20 +14,9 @@ body
    left: 0;
    right: 0;
 }
-*
-{
-    margin-right: 0px;
-    margin-left: 0px;
-    right: 0;
-    left: 0;
-}
 .navbar
 {
   margin-bottom: 20px;
-}
-#ital
-{
-    font-style: italic;
 }
 #talentMenu
 {
@@ -59,12 +48,12 @@ body
 {
     padding-left: 45px;
 }
-td.left
+td.leftPart
 {
    text-align: left;
    
 }
-td.right
+td.rightPart
 {
     text-align: right;
     padding-right: 25px;

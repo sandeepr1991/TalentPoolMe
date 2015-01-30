@@ -1,0 +1,146 @@
+<html lang="en">
+   <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-talent.css" rel="stylesheet">
+		<title>TalentPoolMe</title>
+    </head>
+	
+	<body>    
+        <div id="top" class="container">
+            <div id="talentMenu">
+                <table id="talentTitle">
+                    <tr>
+						<td class="leftPart"><img alt="Brand" src="img/200.jpg"></td>
+						<td class="rightPart">
+							<img src="./img/user_logo.jpg"> User Name
+						</td>
+					</tr>
+                </table>
+            </div>
+			<!-- Static navbar -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Talent</a></li>
+							<li><a href="talentSearch.html">Employers</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#">Notifications <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">Update</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div><!--/.container-fluid -->
+			</nav>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<table id="user-list">
+						<tr>
+							<td>
+							<div id="img-user-container">
+								<img src="./img/user_female-128.png" alt="user-image" class="img-responsive img-thumbnail"/>
+							</div>
+							</td>
+							<td>
+								<h4>User Name</h4>
+								<img src="./img/email.png" alt="email-image" class="img-responsive"/>
+							</td>
+						</tr>
+					</table>
+					<table class="tabTest">
+						<tr>
+							<td><img src="img/cornell.jpg" class="img-responsive"></td>
+							<td>
+								<h3>Cornell University</h3>
+								<p>Bachelor&#39s &#8211 Business &#8211 Banking</p>
+								<p>Student: May 2013</p>
+								<p>4.0 GPA</p>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="img/abb.jpg" class="img-responsive"></td>
+							<td>
+								<h3>ABB Group</h3>
+								<p>Internship: Consulting</p>
+								<p>Current: May 2013 &#8208 Present</p>
+								<p>New York City, NY USA</p>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-sm-6">
+					<div id="picSlides" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/2.png" alt="">
+							</div>
+							<div class="item">
+								<img src="img/3.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="img/4.png" alt="">
+							</div>
+							<div class="item">
+								<img src="img/5.jpg" alt="">
+							</div>
+						</div>
+						<a class="left carousel-control" href="#picSlides" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#picSlides" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					<div>
+						<table id="intro">
+							<tr>
+								<td id="introPic">
+									<img src="img/1.png" class="img-responsive">
+								</td>
+								<td id="introText">
+									<p>
+										Tell a story of why a talented person would want to work at ABB.
+									</p>
+									<p id="ital">
+										"I loved that I could start a project and truly 
+										call it my own. I had a summer-long project 
+										that I truly was able to do all by myself and 
+										having all the directors, team members, and 
+										higher-ups watch me present then 
+										congratulate me on how well I did really 
+										was such a stellar feeling."
+									</p>
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/typeahead.js"></script>
+	</body>
+</html>
